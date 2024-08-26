@@ -1,8 +1,7 @@
 'use client';
 
-
 import RetroGrid from "@/components/magicui/retro-grid";
-import MeteorDemo from "@/components/magicui/meteors";
+import Meteors from "@/components/magicui/meteors";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { ThemeProvider } from 'next-themes';
 import '@/app/globals.css';
@@ -38,18 +37,16 @@ export default function Home() {
   return (
     <ThemeProvider attribute="class">
       <main className="flex h-screen w-screen overflow-y-hidden">
-        <div className="flex-1">
-          <RetroGrid>
-            
-          </RetroGrid>
+        <div className="flex-1 md:flex-2 lg:flex-3 xl:flex-4">
+          <RetroGrid className="md:w-1/2 lg:w-2/3 xl:w-3/4" />
         </div>
-        <MeteorDemo  />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <Meteors number={30} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-2/3 lg:top-3/4 xl:top-4/5">
           <NumberTickerDemo />
         </div>
-      
         <BorderBeam />
       </main>
     </ThemeProvider>
   );
 }
+
