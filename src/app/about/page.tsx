@@ -24,12 +24,12 @@ export default function Resume() {
 
         {/* Ripple and Image with Text Placement */}
         <div className="relative flex items-center justify-center w-full h-full mt-24">
-          <Ripple className="absolute w-full h-full" />
+          <Ripple />
           <div className="relative z-10 flex items-center justify-center w-full max-w-7xl">
             {/* Left Text */}
             <div className="w-1/2 flex justify-end pr-8">
               <p className="text-3xl font-extrabold text-left">
-                Hello! I'm Priyanshu Lochab, a 22-year-old <span className="text-red-400">tech enthusiast</span> and <span className="text-red-400">financial markets expert</span> based in Delhi, India.
+                Hello! I&apos;m Priyanshu Lochab, a 22-year-old <span className="text-red-400">tech enthusiast</span> and <span className="text-red-400">financial markets expert</span> based in Delhi, India.
               </p>
             </div>
             {/* Image */}
@@ -52,7 +52,7 @@ export default function Resume() {
           {/* Below Text */}
           <div className="absolute bottom-10 w-full flex justify-center">
             <p className="text-3xl font-extrabold text-center px-8">
-              I've developed a diverse skill set that bridges the gap between <span className="text-red-400">technology</span> and <span className="text-red-400">finance</span>.
+              I&apos;ve developed a diverse skill set that bridges the gap between <span className="text-red-400">technology</span> and <span className="text-red-400">finance</span>
             </p>
           </div>
         </div>
