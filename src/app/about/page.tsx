@@ -60,7 +60,7 @@ export default function Resume() {
           {/* Below Text */}
           <div className="absolute bottom-10 w-full flex justify-center">
             <p className="text-3xl font-extrabold text-center px-8">
-              I've developed a diverse skill set that bridges the gap between <span className="text-red-400">technology</span> and <span className="text-red-400">finance</span>.
+              I&apos;ve developed a diverse skill set that bridges the gap between <span className="text-red-400">technology</span> and <span className="text-red-400">finance</span>.
             </p>
           </div>
 
