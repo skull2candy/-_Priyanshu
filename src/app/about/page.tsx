@@ -50,12 +50,32 @@ export default function Resume() {
             </div>
           </div>
         
-          {/* Button Below Image but Above Text */}
           <div className="absolute bottom-24 w-full flex justify-center">
-            <Link href="/skills">
-              <ShinyButton text="&lt;/&gt;Skills" className="text-xl text-red-400 hover:underline z-200" />
-            </Link>
-          </div>
+  <Link href="/">
+    <ShinyButton 
+      text="</>HOME" 
+      className="text-xl text-red-400 hover:underline z-200 mx-2" 
+    />
+  </Link>
+  <Link href='/skills'>
+    <ShinyButton 
+      text="</>Skills" 
+      className="text-xl text-red-400 hover:underline z-200 mx-2" 
+    />
+  </Link>
+  <Link href='/education'>
+    <ShinyButton 
+      text="</>EDUCATION" 
+      className="text-xl text-red-400 hover:underline z-200 mx-2" 
+    />
+  </Link>
+  <Link href='/contact_me'>
+    <ShinyButton 
+      text="</>CONTACT ME" 
+      className="text-xl text-red-400 hover:underline z-200 mx-2" 
+    />
+  </Link>
+</div>
 
           {/* Below Text */}
           <div className="absolute bottom-10 w-full flex justify-center">

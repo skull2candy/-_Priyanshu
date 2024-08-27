@@ -16,6 +16,8 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
+      
+
     },
     extend: {
       colors: {
@@ -113,6 +115,10 @@ const config = {
               "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
           },
         },
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -122,7 +128,8 @@ const config = {
         meteor: "meteor 5s linear infinite",
         ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
-       
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
       },
     },
   },
